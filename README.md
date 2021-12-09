@@ -42,6 +42,7 @@
 
 ### via direct source
 - VSCode
+  - Enable Sync to load configurations: Preferences > Settings Sync
 - Chrome
 - Alfred (https://www.alfredapp.com/) 
   - Powerpack with license code
