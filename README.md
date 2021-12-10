@@ -21,12 +21,16 @@
     - `export PATH="$HOME/.rbenv/bin:$PATH"`
     - `eval "$(rbenv init - zsh)"`
 - heroku cli (https://devcenter.heroku.com/articles/heroku-cli)
-- node 
-  - then install yarn running this command: `npm install --global yarn`
-  - ARM-related issue with `node-sass` in Octoo Webapp, need to use `node@14` until issue is resolved
-    - `brew install node@14`
-    - `brew link node@14`
-    - `echo 'export PATH="/opt/homebrew/opt/node@14/bin:$PATH"' >> ~/.zshrc`
+- nvm
+  - Then run: `nvm install 16`
+  - Then run: `nvm alias default 16`
+  - Add the following to `.zshrc`: 
+    ```
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+    ```
+
 - postgresql@10 (if using different version, use postgresql@13 for example)
   - To enable `psql`, add `export PATH="/opt/homebrew/opt/postgresql@10/bin:$PATH"` to ~/.zshrc
     - If you get `FATAL: database "your-username-here" does not exist`, run the command `createdb` and running `psql` should work
@@ -36,9 +40,6 @@
 ### via app store
 - Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
 - Slack
-- Authenticator 
-- Final Cut Pro
-- Xcode
 
 ### via direct source
 - VSCode
@@ -81,12 +82,11 @@
 
 ### Octoo Webapp
 - Ensure `export FONT_AWESOME_AUTH_TOKEN="insert-token-here"` is defined in `.zshrc`.
-- For ARM-based machine, `node-sass` is not a supported package so ensure `node@14` is used for the time being.
-- Vite doesn't play nicely with ARM-based environment so disable `nuxt-vite` from `nuxt.config.js` for the time being.
 - Copy `.env` over from the old machine into the project root folder.
 - Run: `yarn install` to get started.
 - Run: `yarn dev` to boot up the server (or use alias like `oo2.webapp.start`)
-  
+> NOTE: I was on the `develop` branch when I ran into `js heap out of memory` error (common error for those on ARM-based environment) during the `yarn install` process. What fixed it for me was checking out the `main` branch, re-running the `yarn install` and it worked, then went back to the `develop` branch and did the `yarn install` again, it worked.
+ 
 
 ### Octoo API
 > Before you do this, make sure you follow `rbenv` installation instructions above
