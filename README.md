@@ -11,10 +11,10 @@
 
 ### via brew 
 - git
-  - `git config --global user.name "insert-username-here"`
-  - `git config --global user.email "insert-email-here"`
-  - `cd ~/.ssh && ssh-keygen` and follow output instructions as needed
-  - `cat id_rsa.pub | pbcopy` copies the key into clipboard
+  - `$ git config --global user.name "insert-username-here"`
+  - `$ git config --global user.email "insert-email-here"`
+  - `$ cd ~/.ssh && ssh-keygen` and follow output instructions as needed
+  - `$ cat id_rsa.pub | pbcopy` copies the key into clipboard
   - Go to `github.com/settings/keys` and create `New SSH key` and do a paste
 - rbenv
   - Add the following lines to ~/.zshrc 
@@ -22,8 +22,8 @@
     - `eval "$(rbenv init - zsh)"`
 - heroku cli (https://devcenter.heroku.com/articles/heroku-cli)
 - nvm
-  - Then run: `nvm install 16`
-  - Then run: `nvm alias default 16`
+  - `$ nvm install 16`
+  - `$ nvm alias default 16`
   - Add the following to `.zshrc`: 
     ```
     export NVM_DIR="$HOME/.nvm"
@@ -33,9 +33,9 @@
 
 - postgresql@10 (if using different version, use postgresql@13 for example)
   - To enable `psql`, add `export PATH="/opt/homebrew/opt/postgresql@10/bin:$PATH"` to ~/.zshrc
-    - If you get `FATAL: database "your-username-here" does not exist`, run the command `createdb` and running `psql` should work
+    - If you get `FATAL: database "your-username-here" does not exist`, run the command `$ createdb` and running `$ psql` should work
 - redis 
-  - run command: `brew services start redis`
+  - `$ brew services start redis`
  
 ### via app store
 - Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
@@ -83,8 +83,8 @@
 ### Octoo Webapp
 - Ensure `export FONT_AWESOME_AUTH_TOKEN="insert-token-here"` is defined in `.zshrc`.
 - Copy `.env` over from the old machine into the project root folder.
-- Run: `yarn install` to get started.
-- Run: `yarn dev` to boot up the server (or use alias like `oo2.webapp.start`)
+- `$ yarn install` to get started.
+- `$ yarn dev` to boot up the server (or use alias like `$ oo2.webapp.start`)
 > NOTE: I was on the `develop` branch when I ran into `js heap out of memory` error (common error for those on ARM-based environment) during the `yarn install` process. What fixed it for me was checking out the `main` branch, re-running the `yarn install` and it worked, then went back to the `develop` branch and did the `yarn install` again, it worked.
  
 
