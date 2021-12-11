@@ -57,8 +57,9 @@
   - Preferences > Locations - link to ~/iCloud Drive/Applications/TablePlus/
 - Insomnia Client
   - Go to Preferences > Data
-  - Export data from old laptop into ~/iCloud Drive/Applications/TablePlus/ 
-  - Import data into new laptop
+    - Export data from old laptop into ~/iCloud Drive/Applications/TablePlus/ 
+    - Import data into new laptop
+  - Go to Preferences > Themes and choose `Gruvbox Dark`
 - Sketch (then set up using subscription account)
 - Wally (https://ergodox-ez.com/pages/wally)
 - iStats Pro 
