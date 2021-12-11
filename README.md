@@ -78,6 +78,7 @@
 - Sys Pref > 
   - Security & Privacy > Use Apple Watch to unlock
   - Printers & Scanners > Add Brother Printer
+- `$ defaults write -g ApplePressAndHoldEnabled -bool false` to disable long-hold accent characters and use key-repeat instead
 
 ## Setting up development projects
 
