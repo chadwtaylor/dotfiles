@@ -53,7 +53,7 @@
   - Setup Features: Clipboard History Hotkey: Ctrl-Option-Command-H
 - 1Password (https://1password.com/downloads/mac/)
 - Google Drive (https://www.google.com/drive/download/)
-- Table Plus
+- TablePlus
   - Preferences > Locations - link to ~/iCloud Drive/Applications/TablePlus/
 - Insomnia Client
   - Go to Preferences > Data
@@ -87,23 +87,23 @@
 - Copy `.env` over from the old machine into the project root folder.
 - `$ yarn install` to get started.
 - `$ yarn dev` to boot up the server (or use alias like `$ oo2.webapp.start`)
-> NOTE: I was on the `develop` branch when I ran into `js heap out of memory` error (common error for those on ARM-based environment) during the `yarn install` process. What fixed it for me was checking out the `main` branch, re-running the `yarn install` and it worked, then went back to the `develop` branch and did the `yarn install` again, it worked.
+> NOTE: I was on the `develop` branch when I ran into `js heap out of memory` error (common error for those on ARM-based environment) during the `$ yarn install` process. What fixed it for me was checking out the `main` branch, re-running the `yarn install` and it worked, then went back to the `develop` branch and did the `$ yarn install` again, it worked.
  
 
 ### Octoo API
 > Before you do this, make sure you follow `rbenv` installation instructions above
 > Also address items in this README: https://github.com/octoopi/api/blob/feature/v2/README.md
-- `rbenv install X.X.X` (refer to `.ruby-version` for current version)
-- Try `bundle install` (if no issue arises, you're in luck; otherwise, see possible issues/solutions below)
+- `$ rbenv install X.X.X` (refer to `.ruby-version` for current version)
+- Try `$ bundle install` (if no issue arises, you're in luck; otherwise, see possible issues/solutions below)
 - Gem installation of `pg` may break, esp on M1 computers, try the following:
-  - Run this command: `gem install pg -- --with-pg-config=/opt/homebrew/opt/postgresql@10/bin/pg_config` (credit: https://gist.github.com/jonathandean/7449772)
+  - `$ gem install pg -- --with-pg-config=/opt/homebrew/opt/postgresql@10/bin/pg_config` (credit: https://gist.github.com/jonathandean/7449772)
 - Gem installation of `idn-ruby` may break and if so, try the following: 
-  - Run this command: `gem install idn-ruby -- --with-idn-dir=/opt/homebrew/Cellar/libidn/1.38`
-- When above issues clear, re-run `bundle install`
+  - `$ gem install idn-ruby -- --with-idn-dir=/opt/homebrew/Cellar/libidn/1.38`
+- When above issues clear, re-run `$ bundle install`
 - Copy over `application.yml`, `local_env.yml` and `master.key` over from the old machine
 - Get latest db (make sure you're in legacy environment, run command: `oo1.api`)
-  - run command: `oo.db.dump`
-  - run command: `oo1.db.restore`
-- Run `drop database oo2_primary` and `create database oo2_primary with template oo1_primary`
-- You need `oo2_journal` crap so create a `backup` of `oo2_journal` from old laptop and then `restore` into new laptop
-- Run the migration (eg: `be rake db:skep_migration_v1`)
+  - `$ oo.db.dump`
+  - `$ oo1.db.restore`
+- Run in SQL terminal (eg: TablePlus): `drop database oo2_primary` and `create database oo2_primary with template oo1_primary`
+- You need `oo2_journal` crap so create a `backup` (TablePlus > File > Backup) of `oo2_journal` from old laptop and then `restore` (TablePlus > File > Restore) into new laptop
+- Run the migration (eg: `$ be rake db:skep_migration_v1`)
