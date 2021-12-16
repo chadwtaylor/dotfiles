@@ -36,7 +36,9 @@
     - If you get `FATAL: database "your-username-here" does not exist`, run the command `$ createdb` and running `$ psql` should work
 - redis 
   - `$ brew services start redis`
- 
+
+- nvim
+
 ### via app store
 - Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
 - Slack
