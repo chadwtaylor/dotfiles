@@ -2,7 +2,7 @@
 
 ## ARM-based vs Intel-based
 
-> When using `brew intsall` on ARM-based (M1) machine, installation directory will be `/opt/homebrew/opt/{app-name}` (eg: `/opt/homebrew/opt/postgresql@10`). For Intel-based machine, it will be `/usr/local/{app-name}`. 
+> When using `brew intsall` on ARM-based (M1) machine, installation directory will be `/opt/homebrew/...{app-name}` (eg: `/opt/homebrew/opt/postgresql@10`). For Intel-based machine, it will be `/usr/local/...{app-name}`. 
 
 > To get the path for a specific app, run: `brew info {app-name}`
 
