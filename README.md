@@ -63,6 +63,7 @@
 - Sketch (then set up using subscription account)
 - Wally (https://ergodox-ez.com/pages/wally)
 - iStats Pro 
+  - Refer to `Configurations` below to set menu bar date/time to an analog clock to use iStats data/time instead
 - Convo
 
 ## Setting up ZSH and oh-my-zsh 
@@ -83,6 +84,7 @@
   - Security & Privacy > Use Apple Watch to unlock
   - Printers & Scanners > Add Brother Printer
   - Keyboard > Modifiers > Swap `Caps Lock` for `Esc`
+  - Dock & Menu Bar > Clock (Menu Bar) > Time Options set to `Analog`
 - `$ defaults write -g ApplePressAndHoldEnabled -bool false` to disable long-hold accent characters and use key-repeat instead
 
 ## Setting up development projects
