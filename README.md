@@ -70,8 +70,12 @@
 > Default shell for macos is `zsh`
 
 - Installation instructions for `oh-my-zsh`: https://github.com/ohmyzsh/ohmyzsh/wiki
-- Copy `.zshrc` to `~` (eg: ~/.zshrc)
-- Copy `aliases.zsh` to `~/.oh-my-zsh/custom/` (eg: ~/.oh-my-zsh/custom/aliases.zsh)
+- After installing `oh-my-zsh`, perform the following commands:
+  - `$ cd ~`
+  - `$ mv .zshrc .zshrc.backup`
+  - `$ git clone git@github.com:chadwtaylor/dotfiles.git`
+  - `$ ln -s dotfiles/zsh/.zshrc .zshrc`
+  - `$ ln -s dotfiles/zsh/aliases.zsh .oh-my-zsh/custom/aliases.zsh`
 
 ## Configurations
 
