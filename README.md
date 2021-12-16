@@ -39,11 +39,8 @@
 
 - nvim
 
-### via app store
-- Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
-- Slack
-
 ### via direct source
+- Google Drive (https://www.google.com/drive/download/)
 - VSCode
   - Enable Sync to load configurations: Preferences > Settings Sync
 - Chrome
@@ -54,7 +51,6 @@
   - Setup Alfred Hotkey: Command-Space
   - Setup Features: Clipboard History Hotkey: Ctrl-Option-Command-H
 - 1Password (https://1password.com/downloads/mac/)
-- Google Drive (https://www.google.com/drive/download/)
 - TablePlus
   - Preferences > Locations - link to ~/iCloud Drive/Applications/TablePlus/
 - Insomnia Client
