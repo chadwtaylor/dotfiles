@@ -9,6 +9,11 @@
 
 ## Applications to install
 
+### via app store
+- Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
+- Slack
+- Telegram
+
 ### via brew 
 - git
   - `$ git config --global user.name "insert-username-here"`
