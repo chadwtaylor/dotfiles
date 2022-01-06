@@ -110,7 +110,10 @@
 - Gem installation of `idn-ruby` may break and if so, try the following: 
   - `$ gem install idn-ruby -- --with-idn-dir=/opt/homebrew/Cellar/libidn/1.38`
 - When above issues clear, re-run `$ bundle install`
-- Copy over `application.yml`, `local_env.yml` and `master.key` over from the old machine
+- Copy over the following files from the old machine: 
+  - `application.yml`
+  - `local_env.yml`
+  - `master.key`
 - Get latest db (make sure you're in legacy environment, run command: `oo1.api`)
   - `$ oo.db.dump`
   - `$ oo1.db.restore`
