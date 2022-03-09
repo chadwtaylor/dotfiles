@@ -1,5 +1,11 @@
 # Fresh Installation Notes
 
+## Installing this dotfile project
+
+Git-clone this project from your home directory (eg: `~/`) and run: 
+
+`$ git clone git@github.com:chadwtaylor/dotfiles.git`
+
 ## ARM-based vs Intel-based
 
 > When using `brew intsall` on ARM-based (M1) machine, installation directory will be `/opt/homebrew/...{app-name}` (eg: `/opt/homebrew/opt/postgresql@10`). For Intel-based machine, it will be `/usr/local/...{app-name}`. 
