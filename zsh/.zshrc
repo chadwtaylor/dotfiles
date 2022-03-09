@@ -17,6 +17,8 @@ export FONT_AWESOME_AUTH_TOKEN="E298C481-4FA0-41E2-8F2C-4EA418309665"
 
 eval "$(rbenv init - zsh)"
 
+# autoload -Uz compinit && compinit 
+
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
 # CHAD'S NOTES
