@@ -1,5 +1,11 @@
 # Fresh Installation Notes
 
+## Installing this dotfile project
+
+Git-clone this project from your home directory (eg: `~/`) and run: 
+
+`$ git clone git@github.com:chadwtaylor/dotfiles.git`
+
 ## ARM-based vs Intel-based
 
 > When using `brew intsall` on ARM-based (M1) machine, installation directory will be `/opt/homebrew/...{app-name}` (eg: `/opt/homebrew/opt/postgresql@10`). For Intel-based machine, it will be `/usr/local/...{app-name}`. 
@@ -8,6 +14,11 @@
 
 
 ## Applications to install
+
+### via app store
+- Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
+- Slack
+- Telegram
 
 ### via brew 
 - git
@@ -36,12 +47,11 @@
     - If you get `FATAL: database "your-username-here" does not exist`, run the command `$ createdb` and running `$ psql` should work
 - redis 
   - `$ brew services start redis`
- 
-### via app store
-- Magnet (set up keyboard shortcut for 1/3 and 2/3 space)
-- Slack
+
+- nvim
 
 ### via direct source
+- Google Drive (https://www.google.com/drive/download/)
 - VSCode
   - Enable Sync to load configurations: Preferences > Settings Sync
 - Chrome
@@ -52,7 +62,6 @@
   - Setup Alfred Hotkey: Command-Space
   - Setup Features: Clipboard History Hotkey: Ctrl-Option-Command-H
 - 1Password (https://1password.com/downloads/mac/)
-- Google Drive (https://www.google.com/drive/download/)
 - TablePlus
   - Preferences > Locations - link to ~/iCloud Drive/Applications/TablePlus/
 - Insomnia Client
@@ -107,7 +116,10 @@
 - Gem installation of `idn-ruby` may break and if so, try the following: 
   - `$ gem install idn-ruby -- --with-idn-dir=/opt/homebrew/Cellar/libidn/1.38`
 - When above issues clear, re-run `$ bundle install`
-- Copy over `application.yml`, `local_env.yml` and `master.key` over from the old machine
+- Copy over the following files from the old machine: 
+  - `application.yml`
+  - `local_env.yml`
+  - `master.key`
 - Get latest db (make sure you're in legacy environment, run command: `oo1.api`)
   - `$ oo.db.dump`
   - `$ oo1.db.restore`
