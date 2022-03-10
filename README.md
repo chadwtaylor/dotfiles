@@ -53,7 +53,10 @@ Git-clone this project from your home directory (eg: `~/`) and run:
 ### via direct source
 - Google Drive (https://www.google.com/drive/download/)
 - VSCode
-  - Enable Sync to load configurations: Preferences > Settings Sync
+  - Enable Sync to load configurations: Preferences > Settings Sync (I believe sync happens with GitHub - can't remember)
+  - For reference, refer to following files and edit as needed
+    - `~/Library/Application Support/Code/User/settings.json`
+    - `~/Library/Application Support/Code/User/snippets/...` <= for snippets such as `vue-script.json.code-snippets`
 - Chrome
 - Alfred (https://www.alfredapp.com/) 
   - Powerpack with license code
