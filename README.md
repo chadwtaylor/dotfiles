@@ -31,6 +31,8 @@ Git-clone this project from your home directory (eg: `~/`) and run:
   - Add the following lines to ~/.zshrc 
     - `export PATH="$HOME/.rbenv/bin:$PATH"`
     - `eval "$(rbenv init - zsh)"`
+    - If you need to begin installing ruby:
+      - `rbenv install X.X.X`
 - heroku cli (https://devcenter.heroku.com/articles/heroku-cli)
 - nvm
   - `$ nvm install 16`
