@@ -33,6 +33,8 @@ Git-clone this project from your home directory (eg: `~/`) and run:
     - `eval "$(rbenv init - zsh)"`
     - If you need to begin installing ruby:
       - `rbenv install X.X.X`
+      - if you're installing `2.6.3` specifically for legacy API, run the following command instead:
+      - `$ RUBY_CFLAGS="-Wno-error=implicit-function-declaration" rbenv install 2.6.3`
 - heroku cli (https://devcenter.heroku.com/articles/heroku-cli)
 - nvm
   - `$ nvm install 16`
