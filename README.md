@@ -121,7 +121,7 @@ Git-clone this project from your home directory (eg: `~/`) and run:
 - Gem installation of `pg` may break, esp on M1 computers, try the following:
   - `$ gem install pg -- --with-pg-config=/opt/homebrew/opt/postgresql@10/bin/pg_config` (credit: https://gist.github.com/jonathandean/7449772)
 - Gem installation of `idn-ruby` may break and if so, try the following: 
-  - `$ gem install idn-ruby -- --with-idn-dir=/opt/homebrew/Cellar/libidn/1.38`
+  - `gem install idn-ruby -v '0.1.4' -- --with-idn-dir=$(brew --prefix libidn)`
 - When above issues clear, re-run `$ bundle install`
 - Copy over the following files from the old machine: 
   - `application.yml`
