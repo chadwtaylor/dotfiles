@@ -102,6 +102,14 @@ Git-clone this project from your home directory (eg: `~/`) and run:
   - Keyboard > Modifiers > Swap `Caps Lock` for `Esc`
   - Dock & Menu Bar > Clock (Menu Bar) > Time Options set to `Analog`
 - `$ defaults write -g ApplePressAndHoldEnabled -bool false` to disable long-hold accent characters and use key-repeat instead
+- Custom domain name
+  - `$ nvim sudo /etc/hosts`
+  - Add the following lines:
+    ```
+    127.0.0.1 linguabee.localhost
+    127.0.0.1 app.localhost
+    127.0.0.1 nectar.localhost
+    ```
 
 ## Setting up development projects
 
