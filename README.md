@@ -49,6 +49,7 @@ Git-clone this project from your home directory (eg: `~/`) and run:
 - postgresql@10 (if using different version, use postgresql@13 for example)
   - To enable `psql`, add `export PATH="/opt/homebrew/opt/postgresql@10/bin:$PATH"` to ~/.zshrc
     - If you get `FATAL: database "your-username-here" does not exist`, run the command `$ createdb` and running `$ psql` should work
+  - Troubleshooting: https://github.com/chadwtaylor/dotfiles/wiki/Troubleshooting
 - redis 
   - `$ brew services start redis`
 
