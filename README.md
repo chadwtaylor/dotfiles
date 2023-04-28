@@ -54,6 +54,7 @@ Git-clone this project from your home directory (eg: `~/`) and run:
   - `$ brew services start redis`
 
 - nvim
+- python
 
 ### via direct source
 - Google Drive (https://www.google.com/drive/download/)
