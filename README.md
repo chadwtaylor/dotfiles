@@ -37,8 +37,8 @@ Git-clone this project from your home directory (eg: `~/`) and run:
       - `$ RUBY_CFLAGS="-Wno-error=implicit-function-declaration" rbenv install 2.6.3`
 - heroku cli (https://devcenter.heroku.com/articles/heroku-cli)
 - nvm
-  - `$ nvm install 16`
-  - `$ nvm alias default 16`
+  - `$ nvm install 18`
+  - `$ nvm alias default 18`
   - Add the following to `.zshrc`: 
     ```
     export NVM_DIR="$HOME/.nvm"
